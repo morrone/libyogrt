@@ -85,12 +85,12 @@ AC_DEFUN([X_AC_LSF], [
                       ])
                      ])
       AS_IF([test x$x_ac_cv_lsf_includedir != xno -a x$x_ac_cv_lsf_libdir != xno],[
-             lsf_found=yes
+             found_lsf=yes
              LSF_CPPFLAGS="-I$LSF_INCLUDEDIR"
              LSF_LDFLAGS="-L$LSF_LIBDIR"
              LSF_LIBADD="-lbat $lsf_extra_libs"
             ],[
-             lsf_found=no
+             found_lsf=no
              LSF_CPPFLAGS=""
              LSF_LDFLAGS=""
              LSF_LIBADD=""
